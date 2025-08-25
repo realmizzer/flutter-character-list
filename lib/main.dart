@@ -93,10 +93,15 @@ class _MainNavigationState extends State<MainNavigation> {
         onTap: (index) => setState(() => _currentIndex = index),
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(Icons.list_alt),
+            icon: Icon(Icons.home_outlined),
             label: 'Characters',
+            activeIcon: Icon(Icons.home),
           ),
-          BottomNavigationBarItem(icon: Icon(Icons.star), label: 'Favorites'),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.star_border_outlined),
+            label: 'Favorites',
+            activeIcon: Icon(Icons.star),
+          ),
         ],
       ),
     );
